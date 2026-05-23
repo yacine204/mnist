@@ -10,8 +10,9 @@ Simple fully‑connected neural network trained on MNIST using NumPy. Supports t
 
 Install dependencies:
 
+```bash
 pip install numpy pillow
-
+```
 ## Data
 
 The dataset is expected in:
@@ -27,6 +28,7 @@ python3 mnist.py train
 
 Sample output:
 
+```bash
 Epoch: 1/20, Loss: 0.8043, Accuracy: 0.895
 Epoch: 2/20, Loss: 0.3207, Accuracy: 0.910
 Epoch: 3/20, Loss: 0.2716, Accuracy: 0.924
@@ -49,6 +51,7 @@ Epoch: 19/20, Loss: 0.0792, Accuracy: 0.973
 Epoch: 20/20, Loss: 0.0753, Accuracy: 0.977
 Model saved
 Training complete.
+```
 
 ## Test
 
@@ -56,6 +59,7 @@ python3 mnist.py test
 
 Sample output:
 
+```bash
 Model loaded from weights/mnist_model.npz
 Test accuracy: 97.14% (9714/10000)
 sample predictions (first 15 tests)
@@ -74,16 +78,20 @@ Image 11: predicted 6, Actual 6 ,success , (99.54%)
 Image 12: predicted 9, Actual 9 ,success , (99.60%)
 Image 13: predicted 0, Actual 0 ,success , (99.85%)
 Image 14: predicted 1, Actual 1 ,success , (99.91%)
-
+```
 ## Predict from image
 
-python3 mnist.py predict --image tests/3.png
+![showcase](tests/custom/3.png)
 
+```bash
+python3 mnist.py predict --image tests/custom/3.png
+```
 Sample output:
 
+``
 Model loaded from weights/mnist_model.npz
 prediction: 0 (66.6% confidence)
-
+``
 ### Image tips
 
 - Use 28×28 grayscale when possible.
