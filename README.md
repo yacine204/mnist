@@ -90,7 +90,7 @@ Sample output:
 
 ``
 Model loaded from weights/mnist_model.npz
-prediction: 0 (66.6% confidence)
+prediction: 3 (66.6% confidence)
 ``
 ### Image tips
 
